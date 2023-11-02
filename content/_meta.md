@@ -1,8 +1,8 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: /assets/img/rymd-high-resolution-logo-black-transparent.png
+Tagline: Martins portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
-      icon: github
+  - title: Link till sidans github repo.
+    url: https://github.com/MartinNalepa/design-v3-portfolio
+    icon: github
 ---
