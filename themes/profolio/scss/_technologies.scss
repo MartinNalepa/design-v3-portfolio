@@ -1,0 +1,40 @@
+.technologies-grid-container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  gap: 1.5 rem;
+
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+.technologies-grid-container css {
+  grid-area: css;
+}
+
+.technologies-grid-container html {
+  grid-area: html;
+}
+
+.technologies-grid-container javascript {
+  grid-area: javascript;
+}
+
+.technologies-grid-container php {
+  grid-area: php;
+}
+
+.technologies-grid-container python {
+  grid-area: python;
+}
+
+.technologies-grid-container git {
+  grid-area: git;
+}
+
+.technologies-grid-container sqlite {
+  grid-area: sqlite;
+}
