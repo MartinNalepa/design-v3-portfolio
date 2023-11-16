@@ -1,6 +1,7 @@
 ---
-Title: Martin Nalepa
+Title: Start
 Description: Martins portfolio.
+icon: fas fa-home
 ---
 
 # Martin Nalepa

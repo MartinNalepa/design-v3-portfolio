@@ -1,0 +1,31 @@
+body {
+    font-family: 'Didactic Gothic', sans-serif;
+    line-height: 1.5rem;
+    color: $font-color;
+}
+
+p {
+    font-family: $main-font;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+}
+
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
