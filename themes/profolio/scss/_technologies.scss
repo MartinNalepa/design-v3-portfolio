@@ -1,40 +1,65 @@
 .technologies-grid-container {
   display: grid;
   place-content: center;
-  min-height: 100vh;
-  gap: 1.5 rem;
+  gap: 1.5rem;
+  grid-template-areas:
+    "css"
+    "html"
+    "javascript"
+    "php"
+    "python"
+    "git"
+    "sqlite";
 
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
-  border-radius: 0.5rem;
-  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
 }
 
-.technologies-grid-container css {
+.technology {
+  background-color: green;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem $color-1;
+}
+
+.technology.css {
   grid-area: css;
 }
 
-.technologies-grid-container html {
+.technology.html {
   grid-area: html;
 }
 
-.technologies-grid-container javascript {
+.technology.javascript {
   grid-area: javascript;
 }
 
-.technologies-grid-container php {
+.technology.php {
   grid-area: php;
 }
 
-.technologies-grid-container python {
+.technology.python {
   grid-area: python;
 }
 
-.technologies-grid-container git {
+.technology.git {
   grid-area: git;
 }
 
-.technologies-grid-container sqlite {
+.technology.sqlite {
   grid-area: sqlite;
+}
+
+@media (min-width: 50em) {
+  .technologies-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "css html javascript"
+      "php python git"
+      "sqlite sqlite sqlite";
+  }
 }
