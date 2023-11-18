@@ -6464,7 +6464,7 @@ pre code {
   padding: 0;
 }
 
-#hidden-title {
+.hidden-title {
   display: none;
 }
 
@@ -6706,5 +6706,38 @@ a {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
+  }
+}
+.technology-grid-container {
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "technology-sidebar techno-content techno-content techno-content";
+}
+
+.technology-sidebar {
+  background-color: #9A8C98;
+  grid-area: technology-sidebar;
+}
+
+.techno-content {
+  grid-area: techno-content;
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 1em;
+    width: 100%;
+  }
+  .technology-grid-container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .technology-sidebar {
+    display: none;
   }
 }

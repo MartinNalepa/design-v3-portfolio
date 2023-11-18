@@ -3,17 +3,18 @@
     border: 0 none;
     margin: 0;
     padding: 0;
-  }
-  
-  // Hides the title on the front page.
-  #hidden-title {
+}
+
+// Hides the title on the front page.
+.hidden-title {
     display: none;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     display: none !important;
-  }
-  .body,
+}
+
+.body,
 html {
     width: 100%;
     height: 100%;
@@ -82,45 +83,43 @@ html {
     padding: 0 1em;
     text-decoration: none;
 }
-  
-  .main {
+
+.main {
     flex: 1 0 auto;
     max-width: 1000px;
     margin: auto;
     width: 80%;
     padding: 30px;
-  }
-  
-  .main img {
+}
+
+.main img {
     max-width: 100%;
     height: auto;
     width: auto;
-  }
-  
-  // @media (max-width: 768px) {
-  //   .site-header {
-  //     flex-direction: column;
-  //     align-items: flex-start;
-  //   }
-  
-  //   .nav-icons {
-  //     justify-content: center;
-  //     padding-top: 1em;
-  //   }
-  
-  //   .main {
-  //     padding: 1em;
-  //     width: 100%;
-  //   }
-  // }
-  
-  .footer {
+}
+
+// @media (max-width: 768px) {
+//   .site-header {
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+
+//   .nav-icons {
+//     justify-content: center;
+//     padding-top: 1em;
+//   }
+
+//   .main {
+//     padding: 1em;
+//     width: 100%;
+//   }
+// }
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
     background-color: $color-1;
     color: $font-alternative-color;
-  }
-  
-  
+}
